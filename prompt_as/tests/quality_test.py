@@ -31,9 +31,9 @@ def check_password(username:str, password:str):
 
 
 @pf
-def my_ip():
+def my_ip() -> str:
     """
-    Returns the IP of machine, if there is an exception it should return None
+    Returns the IP of machine in str, if there is an exception it should return None
     """
 
 
@@ -75,13 +75,13 @@ def total_memory_size_in_gb()->int:
     """
 
 @pf
-def available_disk_space_in_gb():
+def available_disk_space_in_gb() -> int:
     """
-    Returns the available disk space in gigabytes of the machine. put "GB" at the end of the result  If there is an exception return None
+    Returns the available disk space in gigabytes of the machine in integer format. If there is an exception return None
     """
 
 @pf
-def get_current_system_time():
+def get_current_system_time() -> str:
     """
     Returns the current system time in string format. If there is an exception return None
     """
@@ -107,13 +107,13 @@ class QualityTest:
 # Example usage:
 test_systems = [
     Prompt_As_Test_System(hackernews, [([],{})], None, [None]),
-    Prompt_As_Test_System(my_ip, [([],{})], None, [None]),
+    Prompt_As_Test_System(my_ip, [([],{})], None, [None], str),
     Prompt_As_Test_System(save_user, [(["onuratakan", "6431"],{})], [True], [None]),
     Prompt_As_Test_System(check_password, [(["onuratakan", "13532"],{})], [False], [None]),
     Prompt_As_Test_System(check_password, [(["onuratakan", "6431"],{})], [True], [None]),
-    Prompt_As_Test_System(total_memory_size_in_gb, [([],{})], None, [None]),
-    Prompt_As_Test_System(available_disk_space_in_gb, [([],{})], None, [None]),
-    Prompt_As_Test_System(get_current_system_time, [([],{})], None, [None])
+    Prompt_As_Test_System(total_memory_size_in_gb, [([],{})], None, [None], int),
+    Prompt_As_Test_System(available_disk_space_in_gb, [([],{})], None, [None], int),
+    Prompt_As_Test_System(get_current_system_time, [([],{})], None, [None], int)
 ]
 
 quality_test = QualityTest(test_systems)

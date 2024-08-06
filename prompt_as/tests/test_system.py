@@ -6,11 +6,12 @@ import time
 import traceback
 class Prompt_As_Test_System:
 
-    def __init__(self, function, test_cases, expected_outputs, bad_outputs):
+    def __init__(self, function, test_cases, expected_outputs, bad_outputs, expected_output_type=None):
         self.function = function
         self.test_cases = test_cases
         self.expected_outputs = expected_outputs
         self.bad_outputs = bad_outputs
+        self.expected_output_type = expected_output_type
 
     def run_test(self):
         the_text = ""
@@ -30,6 +31,9 @@ class Prompt_As_Test_System:
 
                 if self.bad_outputs:
                     assert output not in self.bad_outputs
+
+                if self.expected_output_type:
+                    assert isinstance(output, self.expected_output_type)
 
                 successes += 1
                 the_text += f"Test {index+1} Passed in {end_time - start_time} seconds: output = {output}"
