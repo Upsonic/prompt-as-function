@@ -81,6 +81,12 @@ def operating_system() -> str:
     """
     Returns the name of the operating system. Returns None if unable to detect.
     """
+ 
+@pf 
+def all_running_processes()->list:
+    """
+    Lists format all currently running processes. Returns None in case of an error. Lists format all currently running processes
+    """   
     
 
 
@@ -110,8 +116,12 @@ test_systems = [
     Prompt_As_Test_System(check_password, [(["onuratakan", "6431"],{})], [True], [None]),
     Prompt_As_Test_System(total_memory_size_in_gb, [([],{})], None, [None], int),
     Prompt_As_Test_System(available_disk_space_in_gb, [([],{})], None, [None], int),
-    Prompt_As_Test_System(get_current_system_time, [([],{})], None, [None], int)
-    Prompt_As_Test_System(operating_system, [([],{})], None, [None], str)
+    Prompt_As_Test_System(get_current_system_time, [([],{})], None, [None], int),
+    Prompt_As_Test_System(operating_system, [([],{})], None, [None], str),
+    Prompt_As_Test_System(all_running_processes, [([],{})], None, [None], list),
+    
+
+
 ]
 
 quality_test = QualityTest(test_systems)

@@ -101,3 +101,12 @@ def operating_system() -> str:
     Returns the name of the operating system. Returns None if unable to detect.
     """
 ```    
+
+```python
+@pf 
+def all_running_processes()-> list:
+    """
+    Lists all currently running processes sort them two by two. Returns 'Process list cannot be retrieved' in case of an error.Lists all currently running processes
+    """
+
+```
