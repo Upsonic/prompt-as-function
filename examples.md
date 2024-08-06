@@ -68,6 +68,3 @@ def decrypt_via_fernet(encrypted_data:str, encryption_key:str) -> str:
     """
 
 ```
-
-```python
-
