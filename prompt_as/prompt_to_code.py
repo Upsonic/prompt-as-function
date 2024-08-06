@@ -39,7 +39,7 @@ try:
   from .utils.old_functions import get_old_codes, get_old_functions, the_previously_function_codes, get_code_of_function, set_function_to_code_base, the_functions, get_function_index, reset_functions
   from .utils.prev_calls import save_args_decorator, get_previosly_last_return_of_near_element, get_previosly_last_call_of_near_element, reset_calls
   from .prompt_to_function import prompt_to_function
-  from .utils.configs import OPENAI_API_KEY
+  from .utils.configs import prompt_as_config
 except:
     from utils.get_tiger_tools import get_tiger_tools
     from utils.fix_string import fix_string
@@ -50,7 +50,7 @@ except:
     from utils.old_functions import get_old_codes, get_old_functions, the_previously_function_codes, get_code_of_function, set_function_to_code_base, the_functions, get_function_index, reset_functions
     from utils.prev_calls import save_args_decorator, get_previosly_last_return_of_near_element, get_previosly_last_call_of_near_element, reset_calls
     from prompt_to_function import prompt_to_function
-    from utils.configs import OPENAI_API_KEY
+    from utils.configs import prompt_as_config
 
 
 
@@ -75,7 +75,7 @@ def prompt_code(prompt, tester=False, custom_the_result=None, function_name=None
     for each_f in the_releated_functions:
         previosly_calls += "\n\nFunction:"+ each_f + "\nCALL" + get_previosly_last_call_of_near_element(each_f)
 
-    llm = ChatOpenAI(model="gpt-4-turbo", api_key=OPENAI_API_KEY(), verbose=verbose_level)
+    llm = ChatOpenAI(model=prompt_as_config.OPENAI_MODEL, api_key=prompt_as_config.OPENAI_API_KEY, verbose=verbose_level)
 
 
     

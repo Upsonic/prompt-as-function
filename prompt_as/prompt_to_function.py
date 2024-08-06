@@ -9,14 +9,14 @@ try:
   from .utils.get_tiger_tools import get_tiger_tools
   from .utils.fix_string import fix_string
   from .utils.notes import get_notes
-  from .utils.configs import OPENAI_API_KEY
+  from .utils.configs import prompt_as_config
 except:
   from utils.old_functions import get_function_index, get_code_of_function, set_function_to_code_base, get_old_functions, get_old_codes, the_functions, the_previously_function_codes
   from utils.string_to_function import string_to_function
   from utils.get_tiger_tools import get_tiger_tools
   from utils.fix_string import fix_string
   from utils.notes import get_notes
-  from utils.configs import OPENAI_API_KEY
+  from utils.configs import prompt_as_config
 
 
 
@@ -27,7 +27,7 @@ def prompt_to_function(prompt:str, tester:bool=False, more=False, function_name=
     if tester:
         verbose_level = True
     
-    llm = ChatOpenAI(model="gpt-4-turbo", api_key=OPENAI_API_KEY(), verbose=verbose_level)
+    llm = ChatOpenAI(model=prompt_as_config.OPENAI_MODEL, api_key=prompt_as_config.OPENAI_API_KEY, verbose=verbose_level)
 
 
     # Executor agent for making executions for mission
