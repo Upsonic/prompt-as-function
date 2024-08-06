@@ -30,6 +30,29 @@ def sleep(second:str) -> bool:
 # Testing and Settings
 
 <details>
+<h1>Model Settings</h1>
+You can change the OpenAI model that have been used for `prompt-as`.
+
+```python
+from prompt_as import prompt_as_config, pf
+
+
+prompt_as_config.OPENAI_MODEL = "gpt-4-turbo"
+# Model Setting
+
+prompt_as_config.OPENAI_API_KEY = "sk-**"
+
+@pf
+def sleep(second:str) -> bool:
+    """
+    Sleeps for the given seconds and returns True.
+    """
+
+
+
+```
+
+
 <h1>Testing</h1>
 
 If you want to test this library on a large scale, you can use our test system as well.
