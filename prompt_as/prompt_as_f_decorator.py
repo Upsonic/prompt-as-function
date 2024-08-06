@@ -6,8 +6,8 @@ try:
     from .prompt_to_code import prompt_code
     from .prompt_to_function import prompt_to_function
 except:
-    from prompt_to_code import prompt_code
-    from prompt_to_function import prompt_to_function
+    from prompt_as.prompt_to_code import prompt_code
+    from prompt_as.prompt_to_function import prompt_to_function
 
 def pf(*args, tester=False, function_just=False):
     def decorator(func):
