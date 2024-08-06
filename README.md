@@ -25,7 +25,7 @@ def sleep(second:str) -> bool:
 
 
 
-# Details
+# Testing and Settings
 
 <details>
 <h1>Testing</h1>
