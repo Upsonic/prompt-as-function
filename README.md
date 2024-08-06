@@ -23,6 +23,8 @@ def sleep(second:str) -> bool:
 
 ```
 
+[Example @pf Functions](https://github.com/Upsonic/prompt-as-function/blob/master/examples.md)
+
 
 
 # Testing and Settings
