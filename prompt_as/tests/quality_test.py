@@ -73,27 +73,30 @@ def decrypt_via_fernet(encrypted_data:str, encryption_key:str) -> str:
 
 
 
-def quality_test():
-
-    test_1 = Prompt_As_Test_System(hackernews, [([],{})], None, [None]).run_test()
-
-    test_2 = Prompt_As_Test_System(my_ip, [([],{})], None, [None]).run_test()
-
-    test_3 = Prompt_As_Test_System(save_user, [(["onuratakan", "6431"],{})], [True], [None]).run_test()
 
 
-    test_4 = Prompt_As_Test_System(check_password, [(["onuratakan", "13532"],{})], [False], [None]).run_test()
+class QualityTest:
+    def __init__(self, test_systems):
+        self.test_systems = test_systems
 
+    def run_tests(self):
+        results = []
+        for test_system in self.test_systems:
+            result = test_system.run_test()
+            results.append(result)
 
-    test_5 = Prompt_As_Test_System(check_password, [(["onuratakan", "6431"],{})], [True], [None]).run_test()
+        print("\n\n\n\n\n*******************")
+        print("All results:\n")
+        for result in results:
+            print(result)
 
+# Example usage:
+test_systems = [
+    Prompt_As_Test_System(hackernews, [([],{})], None, [None]),
+    Prompt_As_Test_System(my_ip, [([],{})], None, [None]),
+    Prompt_As_Test_System(save_user, [(["onuratakan", "6431"],{})], [True], [None]),
+    Prompt_As_Test_System(check_password, [(["onuratakan", "13532"],{})], [False], [None]),
+    Prompt_As_Test_System(check_password, [(["onuratakan", "6431"],{})], [True], [None])
+]
 
-    print("\n\n\n\n\n*******************")
-
-    print("All results:\n")
-
-    print(test_1)
-    print(test_2)
-    print(test_3)
-    print(test_4)
-    print(test_5)
+quality_test = QualityTest(test_systems)
