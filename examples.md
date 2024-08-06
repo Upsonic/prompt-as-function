@@ -68,3 +68,12 @@ def decrypt_via_fernet(encrypted_data:str, encryption_key:str) -> str:
     """
 
 ```
+
+```python
+
+@pf
+def total_memory_size_in_gb()->int:
+    """
+    Returns the total memory in gigabytes of the machine. put "GB" at the end of the result If there is an exception return None
+    """
+ ```
