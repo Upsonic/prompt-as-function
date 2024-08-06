@@ -94,3 +94,10 @@ def system_time_and_date()->str:
     """
 ```
 
+```python
+@pf
+def operating_system() -> str:
+    """
+    Returns the name of the operating system. Returns None if unable to detect.
+    """
+```    

@@ -24,12 +24,6 @@ def check_password(username:str, password:str):
     And return True or False bool
     """
 
-
-
-
-
-
-
 @pf
 def my_ip() -> str:
     """
@@ -37,12 +31,8 @@ def my_ip() -> str:
     """
 
 
-
-
-
-
 @pf
-def hackernews():
+def hackernews() -> list:
     """
     Returns the latest hacker news posts (10) in a list format with their links. If there is an exception return None
     """
@@ -86,6 +76,13 @@ def get_current_system_time() -> str:
     Returns the current system time in string format. If there is an exception return None
     """
 
+@pf
+def operating_system() -> str:
+    """
+    Returns the name of the operating system. Returns None if unable to detect.
+    """
+    
+
 
 
 
@@ -106,7 +103,7 @@ class QualityTest:
 
 # Example usage:
 test_systems = [
-    Prompt_As_Test_System(hackernews, [([],{})], None, [None]),
+    Prompt_As_Test_System(hackernews, [([],{})], None, [None], list),
     Prompt_As_Test_System(my_ip, [([],{})], None, [None], str),
     Prompt_As_Test_System(save_user, [(["onuratakan", "6431"],{})], [True], [None]),
     Prompt_As_Test_System(check_password, [(["onuratakan", "13532"],{})], [False], [None]),
