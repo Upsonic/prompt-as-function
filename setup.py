@@ -14,7 +14,7 @@ with open("requirements.txt") as fp:
 
 setup(
     name="prompt_as",
-    version="0.1.0",
+    version="0.2.0",
     description="""GPT""",
     long_description="".join(open("README.md", encoding="utf-8").readlines()),
     long_description_content_type="text/markdown",
