@@ -74,7 +74,11 @@ def total_memory_size_in_gb()->int:
     Returns the total memory in gigabytes of the machine. put "GB" at the end of the result If there is an exception return None
     """
 
-
+@pf
+def available_disk_space_in_gb():
+    """
+    Returns the available disk space in gigabytes of the machine. put "GB" at the end of the result  If there is an exception return None
+    """
 
 
 
@@ -101,7 +105,8 @@ test_systems = [
     Prompt_As_Test_System(save_user, [(["onuratakan", "6431"],{})], [True], [None]),
     Prompt_As_Test_System(check_password, [(["onuratakan", "13532"],{})], [False], [None]),
     Prompt_As_Test_System(check_password, [(["onuratakan", "6431"],{})], [True], [None]),
-    Prompt_As_Test_System(total_memory_size_in_gb, [([],{})], None, [None])
+    Prompt_As_Test_System(total_memory_size_in_gb, [([],{})], None, [None]),
+    Prompt_As_Test_System(available_disk_space_in_gb, [([],{})], None, [None])
 ]
 
 quality_test = QualityTest(test_systems)
