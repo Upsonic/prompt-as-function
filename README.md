@@ -27,8 +27,8 @@ def sleep(second:str) -> bool:
 
 # Details
 
-<detail>
-### Testing
+<details>
+<h1>Testing</h1>
 
 If you want to test this library on a large scale, you can use our test system as well.
 
@@ -56,4 +56,4 @@ Prompt_As_Test_System(sleep_time, [(["2"], {})], [True], [False]).run_test()
 
 ```
 
-</detail>
+</details>
