@@ -80,8 +80,17 @@ def total_memory_size_in_gb()->int:
 
 ```python
 @pf
-def available_disk_space_in_gb():
+def available_disk_space_in_gb()->int:
     """
     Returns the available disk space in gigabytes of the machine. put "GB" at the end of the result  If there is an exception return None
     """
 ```
+
+```python
+@pf
+def system_time_and_date()->str:
+    """
+    Returns the current system time and date. Returns None if there is an error fetching the time.
+    """
+```
+

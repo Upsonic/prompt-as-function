@@ -80,6 +80,12 @@ def available_disk_space_in_gb():
     Returns the available disk space in gigabytes of the machine. put "GB" at the end of the result  If there is an exception return None
     """
 
+@pf
+def get_current_system_time():
+    """
+    Returns the current system time in string format. If there is an exception return None
+    """
+
 
 
 
@@ -106,7 +112,8 @@ test_systems = [
     Prompt_As_Test_System(check_password, [(["onuratakan", "13532"],{})], [False], [None]),
     Prompt_As_Test_System(check_password, [(["onuratakan", "6431"],{})], [True], [None]),
     Prompt_As_Test_System(total_memory_size_in_gb, [([],{})], None, [None]),
-    Prompt_As_Test_System(available_disk_space_in_gb, [([],{})], None, [None])
+    Prompt_As_Test_System(available_disk_space_in_gb, [([],{})], None, [None]),
+    Prompt_As_Test_System(get_current_system_time, [([],{})], None, [None])
 ]
 
 quality_test = QualityTest(test_systems)
