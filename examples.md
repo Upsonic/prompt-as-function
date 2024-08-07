@@ -317,4 +317,13 @@ Multpley three double digit numbers and returns in int format. if there is an ex
 
 ```
 
+```python 
+@pf
+def generate_password(length: int) -> str:
+    """
+    Generates a random, secure password of the given length, containing letters, numbers, and special characters.
+    if there is an exception it should return None
+    
+    """
+```
 

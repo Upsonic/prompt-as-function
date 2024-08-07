@@ -236,6 +236,13 @@ def multpley_three_double_digit(number_one: int, number_two: int, number_three:i
     Multpley three double digit numbers and returns in int format. if there is an exception it should return None
     """
 
+def generate_password(length: int) -> str:
+    """
+    Generates a random, secure password of the given length, containing letters, numbers, and special characters.
+    if there is an exception it should return None
+    """
+
+
 class QualityTest:
     def __init__(self, test_systems): 
         self.test_systems = test_systems
@@ -322,6 +329,7 @@ test_systems = [
     Prompt_As_Test_System(multpley_three_double_digit, [(50, 50, 40)], [100000], [None], int),
     Prompt_As_Test_System(encrypt_via_fernet, [("Hello World", "I am encrypt1234")], None, [None], str),
     Prompt_As_Test_System(decrypt_via_fernet, [("gok", "bora")], None, [None], str),
+    Prompt_As_Test_System(generate_password, [(10,)], None, [None], str),
 
 
 
