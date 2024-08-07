@@ -212,3 +212,14 @@ def get_usd_to_bbd_price()-> str:
     """
 
 ``` 
+
+```python
+
+@pf
+def get_city_weather(city)-> int:
+    """
+    Returns the given city weather from int used web if there is an exception it should return None
+    """
+
+
+```
