@@ -144,3 +144,11 @@ def system_locales()-> str:
     Returns the current locale setting of the system. Returns None on error.    
     """
 ```
+
+```python
+@pf
+def speaker_volume():
+    """
+    Returns the current speaker volume level as a percentage. Returns None on error.
+    """
+```

@@ -112,6 +112,13 @@ def system_locales()-> str:
     Returns the current locale setting of the system. Returns None on error.    
     """
 
+@pf
+def speaker_volume():
+    """
+    Returns the current speaker volume level as a percentage. Returns None on error.
+    """
+
+
 class QualityTest:
     def __init__(self, test_systems):
         self.test_systems = test_systems
