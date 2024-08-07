@@ -233,3 +233,14 @@ def calculate_age(birthdate)-> int:
     Calculates and return from int the age based on the provided birthdate. If the birthdate is invalid or in the future, returns None.
     """
 ```
+
+```python 
+@pf
+def convert_temperature(temp, unit)-> str:
+    """
+    Converts a temperature from Celsius to Fahrenheit or vice versa. Input is temperature and 'C' for Celsius or 'F' for Fahrenheit.
+    Returns None if the unit is invalid.
+
+    """
+
+```

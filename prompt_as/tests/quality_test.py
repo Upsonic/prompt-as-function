@@ -174,6 +174,15 @@ def calculate_age(birthdate)-> int:
     Calculates and return from int the age based on the provided birthdate. If the birthdate is invalid or in the future, returns None.
     """    
 
+@pf
+def convert_temperature(temp, unit)-> str:
+    """
+    Converts a temperature from Celsius to Fahrenheit or vice versa. Input is temperature and 'C' for Celsius or 'F' for Fahrenheit.
+    Returns None if the unit is invalid.
+
+    """
+
+
 class QualityTest:
     def __init__(self, test_systems):
         self.test_systems = test_systems
@@ -215,7 +224,8 @@ test_systems = [
     Prompt_As_Test_System(get_usd_to_bbd_price, [([],{})], None, [None], str),
     Prompt_As_Test_System(get_city_weather, [("Istanbul",)], None, [None], int),
     Prompt_As_Test_System(calculate_age, [("2005-05-05",)], [19] , [None], int),
-    
+    Prompt_As_Test_System(convert_temperature, [(100, 'C')], [212], [None], str),
+    Prompt_As_Test_System(convert_temperature, [(212, 'F')], [100], [None], str),    
 
 
 ]
