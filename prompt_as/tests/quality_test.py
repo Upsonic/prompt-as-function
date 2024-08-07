@@ -201,6 +201,12 @@ def add_duble_digit(number_one, number_two, number_tree) -> int:
 
     """    
 
+@pf
+def multpley_single_digit(number_one, number_two) -> int:
+    """
+    Multpley two single digit numbers and returns in int format. if there is an exception it should return None
+    """    
+
 
 class QualityTest:
     def __init__(self, test_systems):
@@ -256,6 +262,12 @@ test_systems = [
     Prompt_As_Test_System(add_duble_digit, [(9, 8, 9)], [26], [None], int), 
     Prompt_As_Test_System(add_duble_digit, [(0, 1, 2)], [3], [None], int),
     Prompt_As_Test_System(add_duble_digit, [(5, 5, 5)], [15], [None], int),
+    Prompt_As_Test_System(multpley_single_digit, [(1, 2)], [2], [None], int),
+    Prompt_As_Test_System(multpley_single_digit, [(1, 9)], [9], [None], int),
+    Prompt_As_Test_System(multpley_single_digit, [(9, 9)], [81], [None], int),
+    Prompt_As_Test_System(multpley_single_digit, [(0, 1)], [0], [None], int),
+    Prompt_As_Test_System(multpley_single_digit, [(5, 5)], [25], [None], int),
+
 
 
 

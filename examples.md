@@ -269,5 +269,14 @@ Adds tree single digit numbers and returns in int format. if there is an excepti
 """
 ```
 
+```python 
+@pf
+def add_single_digit(number_one, number_two) -> int:
+"""
+Multpley two single digit numbers and returns in int format. if there is an exception it should return None
+"""
+
+```
+
 
 
