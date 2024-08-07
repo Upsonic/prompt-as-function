@@ -189,55 +189,55 @@ def parse_url(url)-> str:
     """    
 
 @pf
-def add_two_single_digit(number_one, number_two) -> int:
+def add_two_single_digit(number_one:int, number_two:int) -> int:
     """
     Adds two single digit numbers and returns in int format. if there is an exception it should return None
     """
 
 @pf
-def add_tree_single_digits(number_one, number_two, number_tree) -> int:
+def add_tree_single_digits(number_one:int, number_two:int, number_tree:int) -> int:
     """
     Adds tree single digit numbers and returns in int format. if there is an exception it should return None
 
     """    
 
 @pf
-def multpley_two_single_digit(number_one, number_two) -> int:
+def multpley_two_single_digit(number_one:int, number_two:int) -> int:
     """
     Multpley two single digit numbers and returns in int format. if there is an exception it should return None
     """    
 
-def multpley_tree_single_digit(number_one, number_two, number_tree)-> int:
+def multpley_tree_single_digit(number_one:int , number_two:int, number_tree:int)-> int:
     """
     Multpley tree single digit numbers and returns in int format. if there is an exception it should return None
     """
 
 @pf
-def add_two_double_digit(number_one, number_two) -> int:
+def add_two_double_digit(number_one:int, number_two:int) -> int:
     """
     Adds two double digit numbers and returns in int format. if there is an exception it should return None
     """
 
 @pf
-def add_three_double_digit(number_one, number_two, number_three) -> int:
+def add_three_double_digit(number_one:int, number_two:int, number_three:int) -> int:
     """
     Adds three double digit numbers and returns in int format. if there is an exception it should return None
     """
 
 @pf
-def multpley_two_double_digit(number_one, number_two) -> int:
+def multpley_two_double_digit(number_one:int , number_two:int ) -> int:
     """
     Multpley two double digit numbers and returns in int format. if there is an exception it should return None
     """
 
 @pf
-def multpley_three_double_digit(number_one, number_two, number_three) -> int:
+def multpley_three_double_digit(number_one: int, number_two: int, number_three:int) -> int:
     """
     Multpley three double digit numbers and returns in int format. if there is an exception it should return None
     """
 
 class QualityTest:
-    def __init__(self, test_systems):
+    def __init__(self, test_systems): 
         self.test_systems = test_systems
 
     def run_tests(self):
@@ -320,6 +320,8 @@ test_systems = [
     Prompt_As_Test_System(multpley_three_double_digit, [(90, 90, 20)], [162000], [None], int),
     Prompt_As_Test_System(multpley_three_double_digit, [(10, 10, 10)], [1000], [None], int),
     Prompt_As_Test_System(multpley_three_double_digit, [(50, 50, 40)], [100000], [None], int),
+    Prompt_As_Test_System(encrypt_via_fernet, [("Hello World", "I am encrypt1234")], None, [None], str),
+    Prompt_As_Test_System(decrypt_via_fernet, [("gok", "bora")], None, [None], str),
 
 
 
