@@ -105,7 +105,13 @@ def network_speed_tests()-> str:
     """
     It returns whether the machine is connected to the internet and upload, download and latency values ​​in Mb/sec. In case of error, it returns none.   
     """
-    
+
+@pf
+def system_locales()-> str:
+    """
+    Returns the current locale setting of the system. Returns None on error.    
+    """
+
 class QualityTest:
     def __init__(self, test_systems):
         self.test_systems = test_systems
@@ -136,6 +142,7 @@ test_systems = [
     Prompt_As_Test_System(battery_status, [([],{})], None, [None], str),
     Prompt_As_Test_System(network_status, [([],{})], None, [None], str),
     Prompt_As_Test_System(network_speed_tests, [([],{})], None, [None], str),
+    Prompt_As_Test_System(system_locales, [([],{})], None, [None], str),
     
 
 

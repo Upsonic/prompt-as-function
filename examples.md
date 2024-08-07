@@ -136,3 +136,11 @@ def network_speed_tests()-> str:
     """
 
 ```
+
+```python
+@pf
+def system_locales()-> str:
+    """
+    Returns the current locale setting of the system. Returns None on error.    
+    """
+```
