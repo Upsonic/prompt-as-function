@@ -254,7 +254,7 @@ def parse_url(url)-> str:
 
 ```Python 
 @pf
-def add_two_single_digit(number_one, number_two) -> int:
+def add_two_single_digit(number_one:int, number_two:int) -> int:
 """
 Adds two single digit numbers and returns in int format. if there is an exception it should return None
 """
@@ -262,7 +262,7 @@ Adds two single digit numbers and returns in int format. if there is an exceptio
 
 ```Python 
 @pf
-def add_tree_single_digits(number_one, number_two, number_tree) -> int:
+def add_tree_single_digits(number_one:int, number_two:int, number_tree:int) -> int:
 """
 Adds tree single digit numbers and returns in int format. if there is an exception it should return None
 
@@ -271,7 +271,7 @@ Adds tree single digit numbers and returns in int format. if there is an excepti
 
 ```python 
 @pf
-def multpley_two_single_digit(number_one, number_two) -> int:
+def multpley_two_single_digit(number_one:int, number_two:int) -> int:
 """
 Multpley two single digit numbers and returns in int format. if there is an exception it should return None
 """
@@ -279,7 +279,7 @@ Multpley two single digit numbers and returns in int format. if there is an exce
 ```
 
 ```python
-def multpley_tree_single_digit(number_one, number_two, number_tree )
+def multpley_tree_single_digit(number_one:int, number_two:int, number_tree:int )
 """
 Multpley tree single digit numbers and returns in int format. if there is an exception it should return None
 
@@ -287,21 +287,21 @@ Multpley tree single digit numbers and returns in int format. if there is an exc
 
 ```Python 
 @pf
-def add_two_double_digit(number_one, number_two) -> int:
+def add_two_double_digit(number_one:int, number_two:int) -> int:
 """
 Adds two double digit numbers and returns in int format. if there is an exception it should return None
 ```
 
 ```Python 
 @pf
-def add_three_double_digit(number_one, number_two, number_three) -> int:
+def add_three_double_digit(number_one:int, number_two:int, number_three:int) -> int:
 """
 Adds three double digit numbers and returns in int format. if there is an exception it should return None
 ```
 
 ```python 
 @pf
-def multpley_two_double_digit(number_one, number_two) -> int:
+def multpley_two_double_digit(number_one:int, number_two:int) -> int:
 """
 Multpley two double digit numbers and returns in int format. if there is an exception it should return None
 """
@@ -310,10 +310,11 @@ Multpley two double digit numbers and returns in int format. if there is an exce
 
 ```python 
 @pf
-def multpley_three_double_digit(number_one, number_two, number_three) -> int:
+def multpley_three_double_digit(number_one:int, number_two:int, number_three:int) -> int:
 """
 Multpley three double digit numbers and returns in int format. if there is an exception it should return None
 """
 
 ```
+
 
