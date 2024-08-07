@@ -260,7 +260,14 @@ Adds two single digit numbers and returns in int format. if there is an exceptio
 """
 ```
 
+```Python 
+@pf
+def add_duble_digit(number_one, number_two, number_tree) -> int:
+"""
+Adds tree single digit numbers and returns in int format. if there is an exception it should return None
 
+"""
+```
 
 
 
