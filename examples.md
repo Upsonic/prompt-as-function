@@ -251,3 +251,16 @@ def parse_url(url)-> str:
     Parses a URL and returns its components. if there is an exception it should return None
     """
 ```
+
+```Python 
+@pf
+def add_single_digit(number_one, number_two) -> int:
+"""
+Adds two single digit numbers and returns in int format. if there is an exception it should return None
+"""
+```
+
+
+
+
+

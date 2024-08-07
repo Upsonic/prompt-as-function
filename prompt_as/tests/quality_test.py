@@ -188,6 +188,12 @@ def parse_url(url)-> str:
     Parses a URL and returns its components. if there is an exception it should return None
     """    
 
+@pf
+def add_single_digit(number_one, number_two) -> int:
+    """
+    Adds two single digit numbers and returns in int format. if there is an exception it should return None
+    """
+
 
 class QualityTest:
     def __init__(self, test_systems):
@@ -233,6 +239,12 @@ test_systems = [
     Prompt_As_Test_System(convert_temperature, [(100, 'C')], [212], [None], str),
     Prompt_As_Test_System(convert_temperature, [(212, 'F')], [100], [None], str),
     Prompt_As_Test_System(parse_url, [("https://github.com/Upsonic/prompt-as-function")], None, [None], str),    
+    Prompt_As_Test_System(add_single_digit, [(1, 2)], [3], [None], int),
+    Prompt_As_Test_System(add_single_digit, [(1, 9)], [10], [None], int),
+    Prompt_As_Test_System(add_single_digit, [(9, 9)], [18], [None], int),
+    Prompt_As_Test_System(add_single_digit, [(0, 1)], [10], [None], int),
+    Prompt_As_Test_System(add_single_digit, [(5, 5)], [10], [None], int),
+
 
 
 ]
