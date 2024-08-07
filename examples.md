@@ -308,3 +308,12 @@ Multpley two double digit numbers and returns in int format. if there is an exce
 
 ```
 
+```python 
+@pf
+def multpley_three_double_digit(number_one, number_two, number_three) -> int:
+"""
+Multpley three double digit numbers and returns in int format. if there is an exception it should return None
+"""
+
+```
+

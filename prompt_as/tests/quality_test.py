@@ -230,6 +230,12 @@ def multpley_two_double_digit(number_one, number_two) -> int:
     Multpley two double digit numbers and returns in int format. if there is an exception it should return None
     """
 
+@pf
+def multpley_three_double_digit(number_one, number_two, number_three) -> int:
+    """
+    Multpley three double digit numbers and returns in int format. if there is an exception it should return None
+    """
+
 class QualityTest:
     def __init__(self, test_systems):
         self.test_systems = test_systems
@@ -309,6 +315,11 @@ test_systems = [
     Prompt_As_Test_System(multpley_two_double_digit, [(90, 90)], [8100], [None], int),
     Prompt_As_Test_System(multpley_two_double_digit, [(10, 10)], [100], [None], int),
     Prompt_As_Test_System(multpley_two_double_digit, [(50, 50)], [2500], [None], int),
+    Prompt_As_Test_System(multpley_three_double_digit, [(40, 20, 10)], [8000], [None], int),
+    Prompt_As_Test_System(multpley_three_double_digit, [(10, 90, 10)], [9000], [None], int),
+    Prompt_As_Test_System(multpley_three_double_digit, [(90, 90, 20)], [162000], [None], int),
+    Prompt_As_Test_System(multpley_three_double_digit, [(10, 10, 10)], [1000], [None], int),
+    Prompt_As_Test_System(multpley_three_double_digit, [(50, 50, 40)], [100000], [None], int),
 
 
 
