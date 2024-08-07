@@ -299,3 +299,12 @@ def add_three_double_digit(number_one, number_two, number_three) -> int:
 Adds three double digit numbers and returns in int format. if there is an exception it should return None
 ```
 
+```python 
+@pf
+def multpley_two_double_digit(number_one, number_two) -> int:
+"""
+Multpley two double digit numbers and returns in int format. if there is an exception it should return None
+"""
+
+```
+
