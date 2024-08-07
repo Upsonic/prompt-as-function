@@ -159,3 +159,12 @@ def audio_volume()->str:
     Returns the current audio volume level as a percentage. Returns None if it cannot be retrieved.
     """
 ```
+
+```python
+@pf
+def wifi_signal_strength()->str:
+    """
+   Measures and returns of the  machine the WiFi signal strength as a percentage. Returns None on error.
+    """
+
+```

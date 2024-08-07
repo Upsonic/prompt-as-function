@@ -125,6 +125,11 @@ def audio_volume()->str:
     Returns the current audio volume level as a percentage. Returns None if it cannot be retrieved.
     """
 
+@pf
+def wifi_signal_strength()->str:
+    """
+    Measures and returns of the  machine the WiFi signal strength as a percentage. Returns None on error.
+    """
 
 class QualityTest:
     def __init__(self, test_systems):
@@ -159,6 +164,7 @@ test_systems = [
     Prompt_As_Test_System(system_locales, [([],{})], None, [None], str),
     Prompt_As_Test_System(speaker_volume, [([],{})], None, [None], str),
     Prompt_As_Test_System(audio_volume, [([],{})], None, [None], str),
+    Prompt_As_Test_System(wifi_signal_strength, [([],{})], None, [None], str),
     
 
 
