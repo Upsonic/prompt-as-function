@@ -182,6 +182,12 @@ def convert_temperature(temp, unit)-> str:
 
     """
 
+@pf
+def parse_url(url)-> str:
+    """
+    Parses a URL and returns its components. if there is an exception it should return None
+    """    
+
 
 class QualityTest:
     def __init__(self, test_systems):
@@ -225,7 +231,8 @@ test_systems = [
     Prompt_As_Test_System(get_city_weather, [("Istanbul",)], None, [None], int),
     Prompt_As_Test_System(calculate_age, [("2005-05-05",)], [19] , [None], int),
     Prompt_As_Test_System(convert_temperature, [(100, 'C')], [212], [None], str),
-    Prompt_As_Test_System(convert_temperature, [(212, 'F')], [100], [None], str),    
+    Prompt_As_Test_System(convert_temperature, [(212, 'F')], [100], [None], str),
+    Prompt_As_Test_System(parse_url, [("https://github.com/Upsonic/prompt-as-function")], None, [None], str),    
 
 
 ]

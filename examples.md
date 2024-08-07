@@ -242,5 +242,12 @@ def convert_temperature(temp, unit)-> str:
     Returns None if the unit is invalid.
 
     """
+```
 
+```Python 
+@pf
+def parse_url(url)-> str:
+    """
+    Parses a URL and returns its components. if there is an exception it should return None
+    """
 ```
