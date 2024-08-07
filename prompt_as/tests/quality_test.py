@@ -137,6 +137,12 @@ def bluetooth_connection_status()->str:
     Checks if the machine is connected to a bluetooth. Returns 'Connected' or 'Disconnected'. Returns None if it cannot be retrieved.
     """
 
+@pf
+def machine_ram()->int:
+    """
+    Returns the RAM of machine from int, if there is an exception it should return None.
+    """
+
 class QualityTest:
     def __init__(self, test_systems):
         self.test_systems = test_systems
@@ -172,7 +178,7 @@ test_systems = [
     Prompt_As_Test_System(audio_volume, [([],{})], None, [None], str),
     Prompt_As_Test_System(wifi_signal_strength, [([],{})], None, [None], str),
     Prompt_As_Test_System(bluetooth_connection_status, [([],{})], None, [None], str),
-    Prompt_As_Test_System(encrypt_via_fernet, [(["onuratakan", "key"],{})], None, [None], str),
+    Prompt_As_Test_System(machine_ram, [([],{})], None, [None], int),
     
 
 

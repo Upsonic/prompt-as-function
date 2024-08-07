@@ -176,3 +176,12 @@ def bluetooth_connection_status()->str:
     Checks if the machine is connected to a bluetooth. Returns 'Connected' or 'Disconnected'. Returns None if it cannot be retrieved.
     """
 ```
+
+```python 
+@pf
+def machine_ram()->int:
+    """
+    Returns the RAM of machine from int, if there is an exception it should return None.
+    """
+
+```
