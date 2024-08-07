@@ -119,3 +119,9 @@ def battery_status()-> str:
     """
 
 ```
+```python
+def network_status()-> str:
+    """
+    Checks if the machine is connected to a network. Returns 'Connected' or 'Disconnected'. If unsuccessful, return None.
+    """
+```

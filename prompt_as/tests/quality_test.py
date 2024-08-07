@@ -94,6 +94,10 @@ def battery_status()-> str:
     Returns the charge percentage of the machine's battery and whether it is charging. If unsuccessful, return None.
     """
 
+def network_status()-> str:
+    """
+    Checks if the machine is connected to a network. Returns 'Connected' or 'Disconnected'. If unsuccessful, return None.
+    """
 
 
 class QualityTest:
@@ -124,6 +128,7 @@ test_systems = [
     Prompt_As_Test_System(operating_system, [([],{})], None, [None], str),
     Prompt_As_Test_System(all_running_processes, [([],{})], None, [None], list),
     Prompt_As_Test_System(battery_status, [([],{})], None, [None], str),
+    Prompt_As_Test_System(network_status, [([],{})], None, [None], str),
     
 
 
