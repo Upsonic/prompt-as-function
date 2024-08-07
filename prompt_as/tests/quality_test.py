@@ -83,12 +83,16 @@ def operating_system() -> str:
     """
  
 @pf 
-def all_running_processes()->list:
+def all_running_processes()-> list:
     """
     Lists format all currently running processes. Returns None in case of an error. Lists format all currently running processes
     """   
     
-
+@pf
+def battery_status()-> str:
+    """
+    Returns the charge percentage of the machine's battery and whether it is charging. If unsuccessful, return None.
+    """
 
 
 
@@ -119,6 +123,7 @@ test_systems = [
     Prompt_As_Test_System(get_current_system_time, [([],{})], None, [None], int),
     Prompt_As_Test_System(operating_system, [([],{})], None, [None], str),
     Prompt_As_Test_System(all_running_processes, [([],{})], None, [None], list),
+    Prompt_As_Test_System(battery_status, [([],{})], None, [None], str),
     
 
 

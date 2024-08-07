@@ -110,3 +110,12 @@ def all_running_processes()-> list:
     """
 
 ```
+
+```python 
+@pf
+def battery_status()-> str:
+    """
+    Returns the charge percentage of the machine's battery and whether it is charging. If unsuccessful, return None.
+    """
+
+```
