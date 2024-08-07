@@ -120,8 +120,19 @@ def battery_status()-> str:
 
 ```
 ```python
+
+@pf
 def network_status()-> str:
     """
     Checks if the machine is connected to a network. Returns 'Connected' or 'Disconnected'. If unsuccessful, return None.
     """
+```
+
+```python
+@pf
+def network_speed_tests()-> str:
+    """
+    It returns whether the machine is connected to the internet and upload, download and latency values ​​in Mb/sec. In case of error, it returns none.   
+    """
+
 ```

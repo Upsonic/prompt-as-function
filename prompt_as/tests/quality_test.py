@@ -94,12 +94,18 @@ def battery_status()-> str:
     Returns the charge percentage of the machine's battery and whether it is charging. If unsuccessful, return None.
     """
 
+@pf
 def network_status()-> str:
     """
     Checks if the machine is connected to a network. Returns 'Connected' or 'Disconnected'. If unsuccessful, return None.
     """
 
-
+@pf
+def network_speed_tests()-> str:
+    """
+    It returns whether the machine is connected to the internet and upload, download and latency values ​​in Mb/sec. In case of error, it returns none.   
+    """
+    
 class QualityTest:
     def __init__(self, test_systems):
         self.test_systems = test_systems
@@ -129,6 +135,7 @@ test_systems = [
     Prompt_As_Test_System(all_running_processes, [([],{})], None, [None], list),
     Prompt_As_Test_System(battery_status, [([],{})], None, [None], str),
     Prompt_As_Test_System(network_status, [([],{})], None, [None], str),
+    Prompt_As_Test_System(network_speed_tests, [([],{})], None, [None], str),
     
 
 
