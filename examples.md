@@ -223,3 +223,13 @@ def get_city_weather(city)-> int:
 
 
 ```
+
+
+```python
+
+@pf
+def calculate_age(birthdate)-> int:
+    """
+    Calculates and return from int the age based on the provided birthdate. If the birthdate is invalid or in the future, returns None.
+    """
+```

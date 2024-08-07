@@ -168,6 +168,12 @@ def get_city_weather(city)-> int:
     Returns the given city weather from int used web if there is an exception it should return None
     """
 
+@pf
+def calculate_age(birthdate)-> int:
+    """
+    Calculates and return from int the age based on the provided birthdate. If the birthdate is invalid or in the future, returns None.
+    """    
+
 class QualityTest:
     def __init__(self, test_systems):
         self.test_systems = test_systems
@@ -208,6 +214,7 @@ test_systems = [
     Prompt_As_Test_System(get_eth_price, [([],{})], None, [None], int),
     Prompt_As_Test_System(get_usd_to_bbd_price, [([],{})], None, [None], str),
     Prompt_As_Test_System(get_city_weather, [("Istanbul",)], None, [None], int),
+    Prompt_As_Test_System(calculate_age, [("2005-05-05",)], [19] , [None], int),
     
 
 
