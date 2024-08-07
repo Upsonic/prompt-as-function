@@ -154,7 +154,7 @@ def speaker_volume()-> str:
 ```
 ```python
 @pf
-def audio_volume()->str:
+def audio_volume()-> str:
     """
     Returns the current audio volume level as a percentage. Returns None if it cannot be retrieved.
     """
@@ -162,7 +162,7 @@ def audio_volume()->str:
 
 ```python
 @pf
-def wifi_signal_strength()->str:
+def wifi_signal_strength()-> str:
     """
    Measures and returns of the  machine the WiFi signal strength as a percentage. Returns None on error.
     """
@@ -171,7 +171,7 @@ def wifi_signal_strength()->str:
 
 ```python
 @pf
-def bluetooth_connection_status()->str:
+def bluetooth_connection_status()-> str:
     """
     Checks if the machine is connected to a bluetooth. Returns 'Connected' or 'Disconnected'. Returns None if it cannot be retrieved.
     """
@@ -179,7 +179,7 @@ def bluetooth_connection_status()->str:
 
 ```python 
 @pf
-def machine_ram()->int:
+def machine_ram()-> int:
     """
     Returns the RAM of machine from int, if there is an exception it should return None.
     """
@@ -188,8 +188,17 @@ def machine_ram()->int:
 
 ```python 
 @pf
-def get_btc_price()->int:
+def get_btc_price()-> int:
     """
     Returns the BTC price from int , if there is an exception it should return None
     """
+```
+
+```python 
+@pf
+def get_eth_price()-> int:
+    """
+    Returns the ETH price from int, if there is an exception it should return None
+    """
+
 ```

@@ -150,6 +150,12 @@ def get_btc_price()->int:
     Returns the BTC price from int , if there is an exception it should return None
     """
 
+@pf
+def get_eth_price()-> int:
+    """
+    Returns the ETH price from int, if there is an exception it should return None
+    """
+
 class QualityTest:
     def __init__(self, test_systems):
         self.test_systems = test_systems
@@ -186,6 +192,8 @@ test_systems = [
     Prompt_As_Test_System(wifi_signal_strength, [([],{})], None, [None], str),
     Prompt_As_Test_System(bluetooth_connection_status, [([],{})], None, [None], str),
     Prompt_As_Test_System(machine_ram, [([],{})], None, [None], int),
+    Prompt_As_Test_System(get_btc_price, [([],{})], None, [None], int),
+    Prompt_As_Test_System(get_eth_price, [([],{})], None, [None], int),
     
 
 
