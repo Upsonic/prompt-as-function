@@ -147,8 +147,15 @@ def system_locales()-> str:
 
 ```python
 @pf
-def speaker_volume():
+def speaker_volume()-> str:
     """
     Returns the current speaker volume level as a percentage. Returns None on error.
+    """
+```
+```python
+@pf
+def audio_volume()->str:
+    """
+    Returns the current audio volume level as a percentage. Returns None if it cannot be retrieved.
     """
 ```

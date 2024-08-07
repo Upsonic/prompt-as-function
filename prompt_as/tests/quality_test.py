@@ -113,9 +113,16 @@ def system_locales()-> str:
     """
 
 @pf
-def speaker_volume():
+def speaker_volume()-> str:
     """
     Returns the current speaker volume level as a percentage. Returns None on error.
+    """
+
+
+@pf
+def audio_volume()->str:
+    """
+    Returns the current audio volume level as a percentage. Returns None if it cannot be retrieved.
     """
 
 
@@ -150,6 +157,8 @@ test_systems = [
     Prompt_As_Test_System(network_status, [([],{})], None, [None], str),
     Prompt_As_Test_System(network_speed_tests, [([],{})], None, [None], str),
     Prompt_As_Test_System(system_locales, [([],{})], None, [None], str),
+    Prompt_As_Test_System(speaker_volume, [([],{})], None, [None], str),
+    Prompt_As_Test_System(audio_volume, [([],{})], None, [None], str),
     
 
 
