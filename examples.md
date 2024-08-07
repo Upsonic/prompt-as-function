@@ -254,7 +254,7 @@ def parse_url(url)-> str:
 
 ```Python 
 @pf
-def add_duble_single_digit(number_one, number_two) -> int:
+def add_two_single_digit(number_one, number_two) -> int:
 """
 Adds two single digit numbers and returns in int format. if there is an exception it should return None
 """
@@ -283,7 +283,13 @@ def multpley_tree_single_digit(number_one, number_two, number_tree )
 """
 Multpley tree single digit numbers and returns in int format. if there is an exception it should return None
 
+```
 
+```Python 
+@pf
+def add_two_double_digit(number_one, number_two) -> int:
+"""
+Adds two double digit numbers and returns in int format. if there is an exception it should return None
 ```
 
 

@@ -189,7 +189,7 @@ def parse_url(url)-> str:
     """    
 
 @pf
-def add_duble_single_digit(number_one, number_two) -> int:
+def add_two_single_digit(number_one, number_two) -> int:
     """
     Adds two single digit numbers and returns in int format. if there is an exception it should return None
     """
@@ -207,10 +207,17 @@ def multpley_two_single_digit(number_one, number_two) -> int:
     Multpley two single digit numbers and returns in int format. if there is an exception it should return None
     """    
 
-def multpley_tree_single_digit(number_one, number_two, number_tree )
+def multpley_tree_single_digit(number_one, number_two, number_tree)-> int:
     """
     Multpley tree single digit numbers and returns in int format. if there is an exception it should return None
     """
+
+@pf
+def add_two_double_digit(number_one, number_two) -> int:
+    """
+    Adds two double digit numbers and returns in int format. if there is an exception it should return None
+    """
+
 
 class QualityTest:
     def __init__(self, test_systems):
@@ -256,11 +263,11 @@ test_systems = [
     Prompt_As_Test_System(convert_temperature, [(100, 'C')], [212], [None], str),
     Prompt_As_Test_System(convert_temperature, [(212, 'F')], [100], [None], str),
     Prompt_As_Test_System(parse_url, [("https://github.com/Upsonic/prompt-as-function")], None, [None], str),    
-    Prompt_As_Test_System(add_duble_single_digit, [(1, 2)], [3], [None], int),
-    Prompt_As_Test_System(add_duble_single_digit, [(1, 9)], [10], [None], int),
-    Prompt_As_Test_System(add_duble_single_digit, [(9, 9)], [18], [None], int),
-    Prompt_As_Test_System(add_duble_single_digit, [(0, 1)], [1], [None], int),
-    Prompt_As_Test_System(add_duble_single_digit, [(5, 5)], [10], [None], int),
+    Prompt_As_Test_System(add_two_single_digit, [(1, 2)], [3], [None], int),
+    Prompt_As_Test_System(add_two_single_digit, [(1, 9)], [10], [None], int),
+    Prompt_As_Test_System(add_two_single_digit, [(9, 9)], [18], [None], int),
+    Prompt_As_Test_System(add_two_single_digit, [(0, 1)], [1], [None], int),
+    Prompt_As_Test_System(add_two_single_digit, [(5, 5)], [10], [None], int),
     Prompt_As_Test_System(add_tree_single_digits, [(1, 2, 3)], [6], [None], int),
     Prompt_As_Test_System(add_tree_single_digits, [(1, 9, 3)], [13], [None], int),     
     Prompt_As_Test_System(add_tree_single_digits, [(9, 8, 9)], [26], [None], int), 
@@ -276,6 +283,11 @@ test_systems = [
     Prompt_As_Test_System(multpley_tree_single_digit, [(9, 8, 9)], [648], [None], int),
     Prompt_As_Test_System(multpley_tree_single_digit, [(0, 1, 2)], [0], [None], int),
     Prompt_As_Test_System(multpley_tree_single_digit, [(5, 5, 5)], [125], [None], int),
+    Prompt_As_Test_System(add_two_double_digit, [(40, 20)], [60], [None], int),
+    Prompt_As_Test_System(add_two_double_digit, [(10, 90)], [100], [None], int),
+    Prompt_As_Test_System(add_two_double_digit, [(90, 90)], [180], [None], int),
+    Prompt_As_Test_System(add_two_double_digit, [(10, 10)], [20], [None], int),
+    Prompt_As_Test_System(add_two_double_digit, [(50, 50)], [100], [None], int),
 
 
 
