@@ -131,6 +131,12 @@ def wifi_signal_strength()->str:
     Measures and returns of the  machine the WiFi signal strength as a percentage. Returns None on error.
     """
 
+@pf
+def bluetooth_connection_status()->str:
+    """
+    Checks if the machine is connected to a bluetooth. Returns 'Connected' or 'Disconnected'. Returns None if it cannot be retrieved.
+    """
+
 class QualityTest:
     def __init__(self, test_systems):
         self.test_systems = test_systems
@@ -165,6 +171,8 @@ test_systems = [
     Prompt_As_Test_System(speaker_volume, [([],{})], None, [None], str),
     Prompt_As_Test_System(audio_volume, [([],{})], None, [None], str),
     Prompt_As_Test_System(wifi_signal_strength, [([],{})], None, [None], str),
+    Prompt_As_Test_System(bluetooth_connection_status, [([],{})], None, [None], str),
+    Prompt_As_Test_System(encrypt_via_fernet, [(["onuratakan", "key"],{})], None, [None], str),
     
 
 
