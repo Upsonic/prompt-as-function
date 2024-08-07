@@ -143,6 +143,13 @@ def machine_ram()->int:
     Returns the RAM of machine from int, if there is an exception it should return None.
     """
 
+
+@pf
+def get_btc_price()->int:
+    """
+    Returns the BTC price from int , if there is an exception it should return None
+    """
+
 class QualityTest:
     def __init__(self, test_systems):
         self.test_systems = test_systems

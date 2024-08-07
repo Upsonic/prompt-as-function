@@ -185,3 +185,11 @@ def machine_ram()->int:
     """
 
 ```
+
+```python 
+@pf
+def get_btc_price()->int:
+    """
+    Returns the BTC price from int , if there is an exception it should return None
+    """
+```
