@@ -12,6 +12,7 @@ pip install prompt-as
 ```python
 from prompt_as import prompt_as_config, pf 
 
+
 prompt_as_config.OPENAI_API_KEY = "sk-**"
 
 @pf
@@ -61,6 +62,7 @@ If you want to test this library on a large scale, you can use our test system a
 
 from prompt_as import prompt_as_config, pf
 
+
 prompt_as_config.OPENAI_API_KEY = "sk-**"
 
 @pf
@@ -78,6 +80,19 @@ from prompt_as import Prompt_As_Test_System
 
 Prompt_As_Test_System(sleep_time, [(["2"], {})], [True], [False]).run_test()
 # (function_name, test_args_and_kwargs, expected_outputs, bad_outputs)
+
+```
+
+<h2>Quality Testing</h2>
+
+If you want to test the working quality of this library, you can use the many different quality tests created.
+
+```python
+
+from prompt_as.tests.quality_test import quality_test
+
+
+quality_test.run_tests() 
 
 ```
 
