@@ -20,7 +20,7 @@ def read_version():
     """
     with open('prompt_as/__init__.py', 'r') as file:
         for line in file:
-            match = re.search(r"__version__ = '(.*)'", line)
+            match = re.search(r"__version__ = '(.*)'", line) # fmt: skip
             if match:
                 return match.group(1)
 
@@ -65,7 +65,7 @@ def write_version(version):
     """
     with open('prompt_as/__init__.py', 'r+') as file:
         content = file.read()
-        content = re.sub(r"__version__ = '.*'", f"__version__ = '{version}'", content)
+        content = re.sub(r"__version__ = '.*'", f"__version__ = '{version}'", content) # fmt: skip
         file.seek(0)
         file.write(content)
 
@@ -81,7 +81,7 @@ def update_version(version):
     for file in files:
         with open(file, 'r+') as f:
             content = f.read()
-            content = re.sub(r'    version=".*"', f'    version="{version}"', content)
+            content = re.sub(r'    version=".*"', f'    version="{version}"', content) # fmt: skip
             f.seek(0)
             f.write(content)
 
