@@ -51,7 +51,7 @@ def encrypt_via_fernet(data:str, encryption_key:str) -> str:
     Encrypts data with encryption_key string and returns the encrypted data.
     I will give encryption_key in string format and you will use for key generation. 
     If there is an exception return None.
-    If succed you will return string to me.
+    If succeed you will return string to me.
     """
 
 ```
@@ -64,7 +64,7 @@ def decrypt_via_fernet(encrypted_data:str, encryption_key:str) -> str:
     Decrypts data with encryption_key string and returns the decrypted data. 
     I will give encryption_key in string format and you will use for key generation. 
     If there is an exception return None.
-    If succed you will return string to me.
+    If succeed you will return string to me.
     """
 
 ```
