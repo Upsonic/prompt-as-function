@@ -2,14 +2,11 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
-import platform
 
 
 # Read the requirements from the requirements.txt file
 with open("requirements.txt") as fp:
     install_requires = fp.read().splitlines()
-
-
 
 
 setup(
@@ -29,5 +26,4 @@ setup(
     install_requires=[],
     python_requires=">= 3.9",
     zip_safe=False,
-
 )

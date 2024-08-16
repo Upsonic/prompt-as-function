@@ -7,7 +7,4 @@ class Configs:
         self.OPENAI_MODEL = "gpt-4-turbo"
 
 
-
 prompt_as_config = Configs()
-
-

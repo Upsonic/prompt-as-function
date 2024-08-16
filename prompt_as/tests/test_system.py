@@ -1,12 +1,15 @@
-
-
-
-
 import time
-import traceback
-class Prompt_As_Test_System:
 
-    def __init__(self, function, test_cases, expected_outputs, bad_outputs, expected_output_type=None):
+
+class Prompt_As_Test_System:
+    def __init__(
+        self,
+        function,
+        test_cases,
+        expected_outputs,
+        bad_outputs,
+        expected_output_type=None,
+    ):
         self.function = function
         self.test_cases = test_cases
         self.expected_outputs = expected_outputs
@@ -39,7 +42,6 @@ class Prompt_As_Test_System:
                 the_text += f"Test {index+1} Passed in {end_time - start_time} seconds: output = {output}"
 
             except Exception as e:
-
                 the_text += f"Test {index+1} Failed: {e}"
 
         the_text += f"{successes}/{total_cases} tests passed"

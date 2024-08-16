@@ -3,5 +3,4 @@ from .utils.configs import prompt_as_config
 
 from .tests.test_system import Prompt_As_Test_System
 
-__version__ = '0.2.0' # fmt: skip 
-
+__version__ = '0.2.0'  # fmt: skip
